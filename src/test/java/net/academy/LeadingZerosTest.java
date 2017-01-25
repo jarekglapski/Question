@@ -26,10 +26,10 @@ public class LeadingZerosTest {
         LeadingZeros.swap(arrayCopy);
         System.out.println(Arrays.toString(arrayCopy));
 
-        List fromArray = Arrays.stream(array)
+        List<Integer> fromArray = Arrays.stream(array)
                 .boxed()
                 .collect(Collectors.toList());
-        List fromArrayCopy = Arrays.stream(array)
+        List<Integer> fromArrayCopy = Arrays.stream(array)
                 .boxed()
                 .collect(Collectors.toList());
         assertTrue(fromArray.containsAll(fromArrayCopy) && fromArrayCopy.containsAll(fromArray));
@@ -44,10 +44,10 @@ public class LeadingZerosTest {
         System.out.println(Arrays.toString(arrayCopy));
 
 
-        List fromArray = Arrays.stream(array)
+        List<Integer> fromArray = Arrays.stream(array)
                 .boxed()
                 .collect(Collectors.toList());
-        List fromArrayCopy = Arrays.stream(array)
+        List<Integer> fromArrayCopy = Arrays.stream(array)
                 .boxed()
                 .collect(Collectors.toList());
         assertTrue(fromArray.containsAll(fromArrayCopy) && fromArrayCopy.containsAll(fromArray));
